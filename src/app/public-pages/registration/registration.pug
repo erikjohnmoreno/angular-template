@@ -1,0 +1,49 @@
+.app.red-background
+  .authentication
+    .sign-up
+      .row.no-mrg-horizon
+        .col-md-4.no-pdd-horizon.d-none.d-md-block
+          .full-height.bg(style="background-image: url('assets/images/others/img-31.jpg')")
+            .vertical-align.full-height.pdd-horizon-70
+              .table-cell
+                .row
+                  .mr-auto.ml-auto.col-md-10
+                    .text-right
+                      img.img-responsive.mrg-left-auto.mrg-btm-15(src='assets/images/logo/logo-white.png', alt='', width='170')
+                      p.text-white.lead.text-opacity.lh-1-7
+                        | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+        .col-md-8.bg-white.no-pdd-horizon
+          .row
+            .col-md-6
+              .full-height.height-100
+                .vertical-align.full-height.pdd-horizon-70
+                  .table-cell
+                    .pdd-horizon-15
+                      h1.mrg-btm-30 Create Your account
+                      form('[formGroup]'="form" '(ngSubmit)'="onSubmit(form.value)")
+                        .form-group
+                          label.text-normal.text-dark Email Address
+                          input.form-control(type='email' 'formControlName'="email" placeholder="Email")
+                          small.text-danger('*ngIf'="form.get('email').invalid && form.get('email').touched") This field is required
+                        ng-container('formGroupName'="passwords")
+                          .form-group
+                            label.text-normal.text-dark Password
+                            input.form-control(type='password', placeholder='Password' 'formControlName'="password")
+                            small.text-danger('*ngIf'="form.get('passwords.password').invalid && form.get('passwords.password').touched") This field is required
+                          .form-group
+                            label.text-normal.text-dark Confirm Password
+                            input.form-control(type='password', placeholder='Password' 'formControlName'="confirmPassword")
+                            small.text-danger('*ngIf'="form.get('passwords.confirmPassword').invalid && form.get('passwords.confirmPassword').touched") This field is required
+                            small.text-danger('*ngIf'="form.get('passwords').invalid && (form.get('passwords.password').touched || form.get('passwords.confirmPassword').touched)") Passwords don't match
+                        .checkbox.font-size-13.mrg-btm-20
+                          input#agreement(name='agreement', type='checkbox', checked='')
+                          label(for='agreement') Remember Me
+                        .form-group
+                          button.btn.btn-primary.btn-block.border-radius-6(type='submit') Create New Account
+                      p
+                        | Already have an account? 
+                        a(href='') Sign In
+                      hr
+                      small
+                        | By signing up you agree to out 
+                        a(href='') Terms & Policy

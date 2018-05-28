@@ -1,0 +1,331 @@
+.app
+  .layout
+    .side-nav
+      .side-nav-inner
+        .side-nav-logo
+          a(href='index.html')
+            .logo.logo-dark(style="background-image: url('assets/images/logo/logo.png')")
+            .logo.logo-white(style="background-image: url('assets/images/logo/logo-white.png')")
+          .mobile-toggle.side-nav-toggle
+            a(href='')
+              i.ti-arrow-circle-left
+        ul.side-nav-menu.scrollable.ps-container.ps-theme-default(data-ps-id='29a61341-6494-034d-8ab7-fe98a6ea973f')
+          li.nav-item.active
+            a.mrg-top-30(href='index.html')
+              span.icon-holder
+                i.ti-home
+              span.title Dashboard
+          li.nav-item.dropdown
+            a.dropdown-toggle(href='javascript:void(0);')
+              span.icon-holder
+                i.ti-package
+              span.title Apps
+              span.arrow
+                i.ti-angle-right
+            ul.dropdown-menu
+              li
+                a(href='email.html') Email
+              li
+                a(href='calendar.html') Calendar
+              li
+                a(href='social.html') Social
+          li.nav-item.dropdown
+            a.dropdown-toggle(href='javascript:void(0);')
+              span.icon-holder
+                i.ti-palette
+              span.title UI Elements
+              span.arrow
+                i.ti-angle-right
+            ul.dropdown-menu
+              li
+                a(href='cards.html') Cards
+              li
+                a(href='buttons.html') Buttons
+              li
+                a(href='modals.html') Modals
+              li
+                a(href='tabs.html') Tabs & Accordions
+              li
+                a(href='progress-slider.html') Progress & Slider
+              li
+                a(href='notification.html') Notification
+              li
+                a(href='typography.html') Typography
+              li
+                a(href='icons.html') Icons
+          li.nav-item.dropdown
+            a.dropdown-toggle(href='javascript:void(0);')
+              span.icon-holder
+                i.ti-file
+              span.title Forms
+              span.arrow
+                i.ti-angle-right
+            ul.dropdown-menu
+              li
+                a(href='form-elements.html') Form Elements
+              li
+                a(href='form-layouts.html') Form Layouts
+              li
+                a(href='form-wizard.html') Form Wizard
+          li.nav-item.dropdown
+            a.dropdown-toggle(href='javascript:void(0);')
+              span.icon-holder
+                i.ti-layout-media-overlay
+              span.title Tables
+              span.arrow
+                i.ti-angle-right
+            ul.dropdown-menu
+              li
+                a(href='basic-table.html') Basic Table
+              li
+                a(href='data-table.html') Data Table
+          li.nav-item.dropdown
+            a.dropdown-toggle(href='javascript:void(0);')
+              span.icon-holder
+                i.ti-pie-chart
+              span.title Charts
+              span.arrow
+                i.ti-angle-right
+            ul.dropdown-menu
+              li
+                a(href='nvd3.html') Nvd3
+              li
+                a(href='chartjs.html') ChartJs
+              li
+                a(href='sparkline.html') Sparkline
+              li
+                a(href='rickshaw.html') Ricksaw
+          li.nav-item.dropdown
+            a.dropdown-toggle(href='javascript:void(0);')
+              span.icon-holder
+                i.ti-map-alt
+              span.title Map
+              span.arrow
+                i.ti-angle-right
+            ul.dropdown-menu
+              li
+                a(href='google-map.html') Google Map
+              li
+                a(href='vector-map.html') Vector Map
+          li.nav-item.dropdown
+            a.dropdown-toggle(href='javascript:void(0);')
+              span.icon-holder
+                i.ti-cloud
+              span.title Extra
+              span.arrow
+                i.ti-angle-right
+            ul.dropdown-menu
+              li
+                a(href='invoice.html') Invoice
+              li
+                a(href='account.html') Account Settings
+              li
+                a(href='faq.html') FAQ
+              li
+                a(href='gallery.html') Gallery
+              li
+                a(href='sign-in.html') Sign In
+              li
+                a(href='sign-in2.html') Sign In 2
+              li
+                a(href='sign-up.html') Sign Up
+              li
+                a(href='404.html') 404
+              li
+                a(href='500.html') 500
+          li.nav-item.dropdown
+            a.dropdown-toggle(href='javascript:void(0);')
+              span.icon-holder
+                i.ti-view-list-alt
+              span.title Multiple Levels
+              span.arrow
+                i.ti-angle-right
+            ul.dropdown-menu
+              li.nav-item.dropdown
+                a(href='javascript:void(0);')
+                  span Level 1.2
+              li.nav-item.dropdown
+                a(href='javascript:void(0);')
+                  span Level 1.1
+                  span.arrow
+                    i.ti-angle-right
+                ul.dropdown-menu
+                  li
+                    a(href='javascript:void(0);') Level 2
+          .ps-scrollbar-x-rail(style='left: 0px; bottom: 0px;')
+            .ps-scrollbar-x(tabindex='0', style='left: 0px; width: 0px;')
+          .ps-scrollbar-y-rail(style='top: 0px; right: 0px;')
+            .ps-scrollbar-y(tabindex='0', style='top: 0px; height: 0px;')
+
+    .page-container
+      .header.navbar
+        .header-container
+          ul.nav-left
+            li
+              a.side-nav-toggle(href='javascript:void(0);')
+                i.ti-view-grid
+            li.search-box
+              a.search-toggle.no-pdd-right(href='javascript:void(0);')
+                i.search-icon.ti-search.pdd-right-10
+                i.search-icon-close.ti-close.pdd-right-10
+            li.search-input
+              input.form-control(type='text', placeholder='Search...')
+              .advanced-search
+                .search-wrapper
+                  .pdd-vertical-10
+                    span.display-block.mrg-vertical-5.pdd-horizon-20.text-gray
+                      i.ti-user.pdd-right-5
+                      span People
+                    ul.list-unstyled.list-info
+                      li
+                        a(href='')
+                          img.thumb-img(src='assets/images/avatars/thumb-1.jpg', alt='')
+                          .info
+                            span.title Jordan Hurst
+                            span.sub-title
+                              i.ti-location-pin
+                              span 44 Shirley Ave. West Chicago
+                      li
+                        a(href='')
+                          img.thumb-img(src='assets/images/avatars/thumb-5.jpg', alt='')
+                          .info
+                            span.title Jennifer Watkins
+                            span.sub-title
+                              i.ti-location-pin
+                              span 514 S. Magnolia St. Orlando
+                      li
+                        a(href='')
+                          img.thumb-img(src='assets/images/avatars/thumb-4.jpg', alt='')
+                          .info
+                            span.title Michael Birch
+                            span.sub-title
+                              i.ti-location-pin
+                              span 70 Bowman St. South Windsor
+                  .mrg-horizon-20.border.top
+                  .pdd-vertical-10
+                    span.display-block.mrg-vertical-5.pdd-horizon-20.text-gray
+                      i.ti-rss.pdd-right-5
+                      span Post
+                    ul.list-unstyled.list-info
+                      li
+                        a(href='')
+                          img.thumb-img(src='assets/images/img-1.jpg', alt='')
+                          .info
+                            span.title Artoo expresses his relief
+                            span.sub-title
+                              span Oh, thank goodness we're coming out...
+                      li
+                        a(href='')
+                          img.thumb-img(src='assets/images/img-2.jpg', alt='')
+                          .info
+                            span.title Ready for some power?
+                            span.sub-title
+                              span Lord Vader. You may take Caption So...
+                .search-footer
+                  span
+                    | You are Searching for '
+                    b.text-dark
+                      span.serach-text-bind
+                    | '
+          ul.nav-right
+            li.user-profile.dropdown
+              a.dropdown-toggle(href='', data-toggle='dropdown')
+                img.profile-img.img-fluid(src='assets/images/user.jpg', alt='')
+                .user-info
+                  span.name.pdd-right-5 {{ email }} 
+                    button.btn.btn-lg.btn-danger('(click)'="logout()") Logout
+                  i.ti-angle-down.font-size-10
+              ul.dropdown-menu
+                li
+                  a(href='')
+                    i.ti-settings.pdd-right-10
+                    span Setting
+                li
+                  a(href='')
+                    i.ti-user.pdd-right-10
+                    span Profile
+                li
+                  a(href='')
+                    i.ti-email.pdd-right-10
+                    span Inbox
+                li.divider(role='separator')
+                li
+                  a(href='')
+                    i.ti-power-off.pdd-right-10
+                    span Logout
+            li.notifications.dropdown
+              span.counter 2
+              a.dropdown-toggle(href='', data-toggle='dropdown')
+                i.ti-bell
+              ul.dropdown-menu
+                li.notice-header
+                  i.ti-bell.pdd-right-10
+                  span Notifications
+                li
+                  ul.list-info.overflow-y-auto.relative.scrollable.ps-container.ps-theme-default.ps-active-y(data-ps-id='d92549b0-fed6-02a8-3350-26cc19b95a3a')
+                    li
+                      a(href='')
+                        img.thumb-img(src='assets/images/avatars/thumb-5.jpg', alt='')
+                        .info
+                          span.title
+                            span.font-size-14.text-semibold Jennifer Watkins
+                            span.text-gray
+                              | commented on your 
+                              span.text-dark post
+                          span.sub-title 5 mins ago
+                    li
+                      a(href='')
+                        img.thumb-img(src='assets/images/avatars/thumb-4.jpg', alt='')
+                        .info
+                          span.title
+                            span.font-size-14.text-semibold Samuel Field
+                            span.text-gray
+                              | likes your 
+                              span.text-dark photo
+                          span.sub-title 8 hours ago
+                    li
+                      a(href='')
+                        span.thumb-img.bg-primary
+                          span.text-white M
+                        .info
+                          span.title
+                            span.font-size-14.text-semibold Michael Birch
+                            span.text-gray
+                              | likes your 
+                              span.text-dark photo
+                          span.sub-title 5 hours ago
+                    li
+                      a(href='')
+                        span.thumb-img.bg-success
+                          span.text-white
+                            i.fa.fa-paper-plane-o
+                        .info
+                          span.title
+                            span.font-size-14.text-semibold Message sent
+                          span.sub-title 8 hours ago
+                    li
+                      a(href='')
+                        span.thumb-img.bg-info
+                          span.text-white
+                            i.ti-user
+                        .info
+                          span.title
+                            span.font-size-14.text-semibold Admin
+                            span.text-gray Welcome on board
+                          span.sub-title 8 hours ago
+                    .ps-scrollbar-x-rail(style='left: 0px; bottom: 0px;')
+                      .ps-scrollbar-x(tabindex='0', style='left: 0px; width: 0px;')
+                    .ps-scrollbar-y-rail(style='top: 0px; height: 248px; right: 0px;')
+                      .ps-scrollbar-y(tabindex='0', style='top: 0px; height: 148px;')
+                li.notice-footer
+                  span
+                    a.text-gray(href='')
+                      | Check all notifications 
+                      i.ei-right-chevron.pdd-left-5.font-size-10
+            li
+              a.side-panel-toggle(href='javascript:void(0);')
+                i.ti-align-right
+
+      .main-content
+        .container-fluid
+          router-outlet

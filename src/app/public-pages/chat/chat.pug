@@ -1,0 +1,43 @@
+#default-modal.modal.fade.show(style='display: block;' '*ngIf'="!currentUser")
+  .modal-dialog(role='document')
+    .modal-content
+      .modal-header
+        h4 Enter Email Address
+      .modal-body
+        form('[formGroup]'="form" '(ngSubmit)'="onSubmit(form.value)")
+          .form-group
+            label.text-normal.text-dark Email Address {{ currentUser?.email }}
+            input.form-control(type='email' 'formControlName'="email" placeholder="Email")
+            small.text-danger('*ngIf'="form.get('email').invalid && form.get('email').touched") This field is required
+          .form-group
+            .modal-footer.no-border
+              .text-right
+                button.btn.btn-primary.btn-sm(data-dismiss='modal' type="submit") OK
+
+.row('*ngIf'="currentUser")
+  .col-md-8
+    .card
+      .card-block
+        h4.card-title YAAAAHAAAA UBUSIN SILAAAAA! {{ currentUser.email }}
+        button.btn.btn-lg.btn-danger('(click)'="logout()") Logout
+        .table-overflow
+          table.table
+            thead
+              tr
+                th Email
+                th Action
+            tbody
+              tr('*ngFor'="let user of users")
+                ng-container('*ngIf'="user.id != currentUser.id")
+                  td {{ user.email }}
+                  td 
+                    button.btn.btn-lg.btn-primary('(click)'="chat(user)") Chat
+  
+  .col-md-4('*ngIf'="currentThread")
+    .card
+      .card-block
+        p('*ngFor'="let message of messages") {{ message.message }}
+        h4.card-title {{ currentThread.receiver.email }}
+        form('[formGroup]'="messageForm" '(ngSubmit)'="send(messageForm.value)")
+          input.form-control(type="text" '[formControl]'="messageForm.controls.message")
+          button(type="submit").btn.btn-lg.btn-success Send
